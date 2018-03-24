@@ -66,31 +66,7 @@ var klingon = {
 
 const inputBox = document.getElementById("textArea");
 const outputBox = document.getElementById('output');
-
-// spanishBtn.addEventListener('click', () => {
-//     const userInput = inputBox.value.toLowerCase();
-//     let domOutput = spanish[userInput];
-//     outputBox.innerHTML = domOutput;
-// })
-
-// const allMyButtons = document.getElementsByClassName('translator');
-
-// for (let i=0; i<allMyButtons.length; i++){
-//     allMyButtons[i].addEventListener('click', (e) => {
-//         const userInput = inputBox.value.toLowerCase();
-//         let domOutput = '';
-//         if (e.target.id === 'spanish') {
-//             domOutput = spanish[userInput];
-//         } else if (e.target.id === 'french'){
-//             domOutput = french[userInput];
-//         } else if( e.target.id === 'german'){
-//             domOutput = german[userInput];
-//         }
-//         outputBox.innerHTML = domOutput;
-//     })
-// }
-
-const allMyButtons = document.getElementsByClassName('translator');
+const allMyButtons = document.getElementsByClassName('button');
 
 for (let i=0; i<allMyButtons.length; i++){
     allMyButtons[i].addEventListener('click', (e) => {
@@ -108,7 +84,10 @@ for (let i=0; i<allMyButtons.length; i++){
             userInput.forEach((word) => {
                 domOutput.push(klingon[word]);
             })
+        } else if( e.target.id === 'clearBtn'){
+            inputBox.value = '';
         }
         outputBox.innerHTML = domOutput.join(' ');
     });
 }
+
