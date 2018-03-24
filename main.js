@@ -64,36 +64,7 @@ var klingon = {
         "kwanzaa": "kwanzaa"
     };
 
-// var spanish = document.getElementById("spanishBtn");
-// var array = ["merry", "christmas"];
-// var span = languages[0];
-
-// for(var i=0; i<span.length; i++){
-//     var string = span[i];
-//     console.log(string);
-// }
-
-// spanish.addEventListener("click", function getInput(){
-//     var input = document.getElementById("textArea").value;
-//     var splitInput = input.split(' ');
-//     console.log(splitInput);
-// });
-
-// document.getElementById("germanBtn").addEventListener("click", );
-
-// document.getElementById("klingonBtn").addEventListener("click", );
-
-// function output(id){
-//     var outputString = document.getElementById(id).value;
-//     outputString.innerHTML = "<p>" + + "</p>";
-// }
-
-// *************************IN-CLASS**************************
-
-// NEED SEPARATE OBJECTS FOR EACH LANGUAGE NOT ARRAY OF OBJECTS
-
 const inputBox = document.getElementById("textArea");
-const spanishBtn = document.getElementById("spanishBtn");
 const outputBox = document.getElementById('output');
 
 // spanishBtn.addEventListener('click', () => {
@@ -125,19 +96,19 @@ for (let i=0; i<allMyButtons.length; i++){
     allMyButtons[i].addEventListener('click', (e) => {
         const userInput = inputBox.value.toLowerCase().split(' ');
         let domOutput = [];
-        if (e.target.id === 'spanishBtn') {
+        if( e.target.id === 'spanishBtn') {
             userInput.forEach((word) => {
-                domOutput.push(spanish[word])
-            });
-        } else if (e.target.id === 'germanBtn'){
+                domOutput.push(spanish[word]);
+            })
+        } else if( e.target.id === 'germanBtn'){
             userInput.forEach((word) => {
-                domOutput.push(german[word])
-            });
+                domOutput.push(german[word]);
+            })
         } else if( e.target.id === 'klingonBtn'){
             userInput.forEach((word) => {
-                domOutput.push(klingon[word])
-            });
+                domOutput.push(klingon[word]);
+            })
         }
         outputBox.innerHTML = domOutput.join(' ');
-    })
+    });
 }
