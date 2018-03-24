@@ -1,0 +1,27 @@
+body {
+    background-color: #EDF2F4;
+}
+
+h1 {
+    font-family: 'Creepster', cursive;
+    color: red;
+    text-align: center;
+    font-size: 5em;
+}
+
+.instructions {
+    color: #2B2D42;
+    font-size: 20px;
+}
+
+.main-content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#output {
+    margin: 10px auto 0;
+    width: 600px;
+    height: 200px;
+    background-color: white;
+}
