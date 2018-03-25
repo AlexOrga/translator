@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-    font-family: 'Creepster', cursive;
+    font-family: cursive;
     color: red;
     text-align: center;
     font-size: 5em;
@@ -19,9 +19,23 @@ h1 {
     text-align: center;
 }
 
+.button {
+    font-family: cursive;
+    font-size: 15px;
+    margin: 5px 5px 0;
+    color: white;
+    background-color: rgb(3, 110, 3);
+}
+
+#textArea {
+    font-size: 20px;
+    text-align: center;
+}
+
 #output {
     margin: 10px auto 0;
     width: 600px;
     height: 200px;
     background-color: white;
+    font-size: 20px;
 }
