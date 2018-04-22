@@ -6,6 +6,8 @@ Utilizing a Javascript object as a limited dictionary this project provides accu
 
 # Screen Shots
 
+![Webpage](https://raw.githubusercontent.com/AlexOrga/translator/master/screenshots/Screen%20Shot%202018-04-22%20at%203.13.46%20PM.png)
+
 # How To Run
 
 - Requires Node.js
